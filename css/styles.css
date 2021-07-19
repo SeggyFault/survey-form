@@ -141,6 +141,8 @@
     padding: 10px 20px;
     background-color: var(--btn-background-color);
     border-radius: 4px;
+
+    cursor: pointer;
   }
   
   
