@@ -144,5 +144,29 @@
 
     cursor: pointer;
   }
+
+/*ANIMATION*/
+ .submit:hover {
+    animation-name: btn-hover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes btn-hover {
+    100% {
+      opacity: 0.8;
+    }
+  }
   
+  .submit:focus {
+    animation-name: btn-focus;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes btn-focus {
+    100% {
+      opacity: 0.24;
+    }
+  }
   
