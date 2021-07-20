@@ -1,4 +1,5 @@
 /*VARIABLES*/
+/* This is the way :clap: */
 :root {
     --background-color: #eee8f7;
     --btn-background-color: #6200ee;
@@ -31,6 +32,7 @@
   /*VALIDATION*/
   input:invalid {
     border: 1px solid #d42a21;
+    /* Double semicolon? Also, I think you don't need the padding, feels odd imo */
     padding-left: 10px;;
   }
   .required {
@@ -40,6 +42,11 @@
    /*FORM*/
   .survey-form {
     min-width: 600px;
+    /* I would use px instead of % for the paddings and margins. 
+    If you need to adjust for mobile, use a @media.
+    Also, The numbers are good but I would suggest to use
+    a more cohesive way to set the elements, kind of a design system.
+    Your design tokens can be 2px 4px 8px 16px ... and stick to those constraints */
     padding: 5%;
     background-color: #fff;
     border-radius: 5px;
@@ -55,6 +62,7 @@
     border: none;
     margin-bottom: 25px;
   }
+  /* Maybe for this you can use a :last-child */
   .survey-fieldset:nth-of-type(7) {
     margin-bottom: 5%;
   }
@@ -70,6 +78,7 @@
     overflow: hidden; /*removes the scroll*/
     outline: none;
     box-shadow: none;
+    /* Maybe you can use inherit as the same is defined in body */
     font-family: 'Roboto', sans-serif;
     color: grey;
   }
@@ -98,6 +107,7 @@ input[type=number] {
   input[type="radio"] {
     display: none;
   }
+  /* Nicely resolved! */
   .radio-label::before {
     content: '';
     display: inline-block;
@@ -110,6 +120,7 @@ input[type=number] {
     vertical-align: middle;
     transition: 0.2s;
   }
+  /* Gud, I would suggest to add something inside tho (same on checkboxes) */
   input[type="radio"]:checked + .radio-label::before {
     background-color: #fff;
     border: 2px solid var(--btn-background-color);
@@ -142,13 +153,16 @@ input[type=number] {
   .foo {
     display: flex;
     justify-content: center;
+    /* Same as before, better px */
     margin-bottom: 5%;
   }
   
   /*BUTTON*/
   .submit {
+    /* Not sure if you need it here, if it's the case use inherit better */
     font-family: 'Roboto', sans-serif;
     color: var(--btn-color);
+    /* Use px for consistency */
     font-size:  14pt;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -163,7 +177,8 @@ input[type=number] {
   }
 
 /*ANIMATION*/
- .submit:hover {
+.submit:hover {
+   /* Fancy! :clap: */
     animation-name: btn-hover;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
