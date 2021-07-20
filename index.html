@@ -27,7 +27,7 @@
                     <fieldset class="survey-fieldset">
 
                         <span class="required">Required*</span>
-                        
+
                     </fieldset>
                     
                     <!--Name-->
@@ -40,9 +40,9 @@
                             class="name" 
                             type="text" 
                             placeholder="Name" 
-                            pattern="[a-z] {1,15}"
+                            pattern="[a-z]{1,15}"
                             title="Username should only contain lowercase letters"
-                            required>
+                            required />
                         <label for="name" id="name-label"></label>
 
                     </fieldset>
@@ -57,7 +57,7 @@
                             class="email" 
                             type="email" 
                             placeholder="Valid email address" 
-                            required>
+                            required />
                         <label for="email" id="email-label"></label>
 
                     </fieldset>
@@ -74,7 +74,7 @@
                             name="number" 
                             placeholder="Your age" 
                             min="18" 
-                            max="100">
+                            max="100" />
                         <label for="number" id="number-label"></label>
 
                     </fieldset>
@@ -103,14 +103,14 @@
                             id="radio1" 
                             type="radio" 
                             name="product" 
-                            value="yes">
+                            value="yes" />
                         <label for="radio1" class="radio-label">Yes</label>
                         
                         <input 
                             id="radio2" 
                             type="radio" 
                             name="product" 
-                            value="no">
+                            value="no" />
                         <label for="radio2" class="radio-label">No</label>
                         
                     </fieldset>
@@ -124,21 +124,21 @@
                             id="checkbox1" 
                             type="checkbox" 
                             name="feature" 
-                            value="chatbot">
+                            value="chatbot" />
                         <label for="checkbox1" class="checkbox-label">Chatbot</label>
                         
                         <input 
                             id="checkbox2" 
                             type="checkbox" 
                             name="feature" 
-                            value="card">
+                            value="card" />
                         <label for="checkbox2" class="checkbox-label">Credit Card Payment</label>
                         
                         <input 
                             id="checkbox3" 
                             type="checkbox" 
                             name="feature" 
-                            value="delivery">
+                            value="delivery" />
                         <label for="checkbox3" class="checkbox-label">Home Delivery</label>
                         
                     </fieldset>
@@ -151,12 +151,9 @@
                         <textarea 
                             class="comment" 
                             name="comment" 
-                            id="comment" 
-                            cols="30" 
-                            rows="15"
-                            minlength="50"
-                            maxlength="250">
-                        </textarea>
+                            id="comment"
+                            value=""
+                            maxlength="250"></textarea>
                         <label for="comment"></label>
 
                     </fieldset>
