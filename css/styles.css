@@ -28,10 +28,16 @@
     font-size: 16px;
   }
   
-  /*FORM*/
+  /*VALIDATION*/
+  input:invalid {
+    border: 1px solid #d42a21;
+    padding-left: 10px;;
+  }
   .required {
     color: var(--required);
   }
+
+   /*FORM*/
   .survey-form {
     min-width: 600px;
     padding: 5%;

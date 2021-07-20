@@ -25,33 +25,65 @@
 
                     <!--Required-->
                     <fieldset class="survey-fieldset">
+
                         <span class="required">Required*</span>
+                        
                     </fieldset>
                     
                     <!--Name-->
                     <fieldset class="survey-fieldset">
-                        <legend>Full Name <span class="required">*</span></legend>
-                        <input id="name" class="name" type="text" placeholder="Name" pattern="[a-zA-Z]" required>
+
+                        <legend>Username <span class="required">*</span></legend>
+
+                        <input 
+                            id="name" 
+                            class="name" 
+                            type="text" 
+                            placeholder="Name" 
+                            pattern="[a-z] {1,15}"
+                            title="Username should only contain lowercase letters"
+                            required>
                         <label for="name" id="name-label"></label>
+
                     </fieldset>
                 
                     <!--Email-->
                     <fieldset class="survey-fieldset">
+
                         <legend>Email address <span class="required">*</span></legend>
-                        <input id="email" class="email" type="email" placeholder="Valid email address" pattern="[a-z0-9@]" required>
+
+                        <input 
+                            id="email" 
+                            class="email" 
+                            type="email" 
+                            placeholder="Valid email address" 
+                            required>
                         <label for="email" id="email-label"></label>
+
                     </fieldset>
             
                     <!--Age-->
                     <fieldset class="survey-fieldset">
+
                         <legend>How old are you?</legend>
-                        <input id="number" class="number" type="number" name="number" placeholder="Your age" min="18" max="100">
+
+                        <input 
+                            id="number" 
+                            class="number" 
+                            type="number" 
+                            name="number" 
+                            placeholder="Your age" 
+                            min="18" 
+                            max="100">
                         <label for="number" id="number-label"></label>
+
                     </fieldset>
                 
                     <!--Dropdown-->
                     <fieldset class="survey-fieldset">
+
                         <legend>How often do you use our product?</legend>
+
                         <select type="text" id="dropdown" class="dropdown" name="value">
                             <option value="option1">Daily</option>
                             <option value="option2">Weekly</option>
@@ -59,6 +91,7 @@
                             <option value="option3">Rarely</option>
                         </select>
                         <label for="dropdown"></label>
+
                     </fieldset>
             
                     <!--Radio-->
@@ -66,10 +99,18 @@
                         
                         <legend>Do you like our new product?</legend>
                         
-                        <input id="radio1" type="radio" name="product" value="yes">
+                        <input 
+                            id="radio1" 
+                            type="radio" 
+                            name="product" 
+                            value="yes">
                         <label for="radio1" class="radio-label">Yes</label>
                         
-                        <input id="radio2" type="radio" name="product" value="no">
+                        <input 
+                            id="radio2" 
+                            type="radio" 
+                            name="product" 
+                            value="no">
                         <label for="radio2" class="radio-label">No</label>
                         
                     </fieldset>
@@ -79,23 +120,45 @@
                         
                         <legend>Which of the features you find most useful?</legend>
                         
-                        <input id="checkbox1" type="checkbox" name="feature" value="chatbot">
+                        <input 
+                            id="checkbox1" 
+                            type="checkbox" 
+                            name="feature" 
+                            value="chatbot">
                         <label for="checkbox1" class="checkbox-label">Chatbot</label>
                         
-                        <input id="checkbox2" type="checkbox" name="feature" value="card">
+                        <input 
+                            id="checkbox2" 
+                            type="checkbox" 
+                            name="feature" 
+                            value="card">
                         <label for="checkbox2" class="checkbox-label">Credit Card Payment</label>
                         
-                        <input id="checkbox3" type="checkbox" name="feature" value="delivery">
+                        <input 
+                            id="checkbox3" 
+                            type="checkbox" 
+                            name="feature" 
+                            value="delivery">
                         <label for="checkbox3" class="checkbox-label">Home Delivery</label>
                         
                     </fieldset>
             
                     <!--Textarea-->
                     <fieldset class="survey-fieldset">
+
                         <legend>What would you still like to improve?</legend>
-                        <label for="comment">
-                            <textarea class="comment" name="comment" id="comment" cols="30" rows="5">Type your comment here</textarea>
-                        </label>
+
+                        <textarea 
+                            class="comment" 
+                            name="comment" 
+                            id="comment" 
+                            cols="30" 
+                            rows="15"
+                            minlength="50"
+                            maxlength="250">
+                        </textarea>
+                        <label for="comment"></label>
+
                     </fieldset>
             
                     <footer class="foo">
